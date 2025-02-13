@@ -1,0 +1,72 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background: url('romantic_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222; /* 使用较深颜色，确保文字清晰 */
+    margin: 0;
+    padding: 0;
+}
+
+.cover, .content, .photo-container {
+    display: none;
+    padding: 20px;
+}
+
+.cover {
+    display: block;
+    font-size: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letter {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #000; /* 黑色文字 */
+}
+
+.signature {
+    font-family: "Brush Script MT", cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.nav-button {
+    background: #ff69b4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 20, 147, 0.8);
+}
+
+.nav-button:hover {
+    background: red;
+    color: white;
+}
+
+.photo-container {
+    display: none;
+}
+
+#photo-display {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}

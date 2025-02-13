@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre d'amour pour Sabrina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景音乐 -->
+    <audio id="bg-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio.
+    </audio>
+
+    <!-- 封面页面 -->
+    <div class="cover" id="cover">
+        <p>Nous sommes ensemble depuis 98 jours, mais ce n'est que le début, notre histoire ne s'arrêtera jamais...</p>
+        <button onclick="enterSite()">Entrer</button>
+    </div>
+
+    <!-- 主要内容（完整情书） -->
+    <div class="content" id="content">
+        <h1>Lettre d'amour pour Sabrina</h1>
+        <div class="letter">
+            <p>À ma chère Sabrina,</p>
+            <p>J'ai passé tant de temps à planifier et écrit d'innombrables lignes de code, juste pour que cette surprise traverse plus de huit mille kilomètres et atteigne ton cœur. Dans ce monde vaste, je ne peux pas te serrer dans mes bras, ni te donner une rose en personne, mais je ferai tout ce qui est en mon pouvoir, par un autre moyen, pour te transmettre mon amour — toi, ma précieuse Sabrina.</p>
+            <p>Dès le moment où nous nous sommes rencontrés, j'ai su que tu étais la plus belle rencontre de ma vie. Tu es douce et déterminée, gentille et sage, telle Cosette dans les écrits de Victor Hugo, possédant un cœur pur et brillant. Ta bienveillance envers ta sœur me rappelle la rose du Petit Prince — unique, précieuse, irremplaçable. Et ton amour pour la culture chinoise m'émeut profondément. Chaque fois que tu parles en chinois, ta voix ressemble à une mélodie enchanteresse, et mon cœur vibre à son son. Sabrina, à mes yeux, tu es parfaite, une véritable œuvre d'art. Même si tu dis souvent que tu es "ronde", dans mon cœur, tu es sans défauts, parfaite en tout. Ici, avec moi, tu n'as jamais besoin de t'inquiéter de tes imperfections, car aimer une personne, ce n'est pas seulement admirer ses qualités, c'est accepter l'ensemble de ses défauts aussi. Tu n'as pas besoin de masquer quoi que ce soit. Je t'aime, j'aime tout de toi, comme le dit le proverbe chinois : "Aimer une personne, c'est aimer tout d'elle."</p>
+            <p>Il existe des milliers de formes d'amour dans ce monde, mais tu es mon unique exception. Je n'ai jamais aimé quelqu'un aussi profondément. C'est la première fois que je ressens un amour aussi fort et aussi déterminé. Je suis prêt à grandir, à m'améliorer, à créer des surprises, simplement pour que notre futur soit encore plus merveilleux. Ce n'est pas seulement la prospérité matérielle, mais aussi l'harmonie de nos esprits. Je crois qu'une fois que nous aurons surmonté cette distance de relation à distance, notre amour sera aussi indestructible qu'un diamant finement sculpté.</p>
+            <p>Tu m'as demandé ce que je ferais la première fois que nous nous rencontrerions. Sabrina, je te serrerai dans mes bras, comme le dit Hugo : "Lorsque deux cœurs se rencontrent, le monde n'a plus d'importance." Je t'embrasserai tendrement, comme Proust l'écrit dans "À la recherche du temps perdu" : "Un baiser n'est pas seulement un contact des lèvres, mais une fusion des âmes." Nous ferons l'amour et je resterai avec toi toute la journée.Nous marcherons ensemble sur le chemin de la vie, comme le dit La Fontaine : "Le vrai bonheur n'est pas d'atteindre le but, mais de marcher main dans la main."</p>
+            <p>Nous entrerons ensemble dans une église pour prier pour notre avenir. Nous apprendrons ensemble le chinois à ta sœur, nous mêlerons nos cultures. Je cuisinerai pour toi les meilleurs plats chinois et j'admirerai ton sourire de satisfaction. Nous voyagerons pour découvrir les paysages du monde, témoignant des moments les plus lumineux de nos vies. Un jour, je serai à tes côtés, après les cours, portant des fleurs que je te remettrai personnellement à ta porte, pour te serrer dans mes bras et t'embrasser tendrement. Nous irons ensemble dans un parc, dans un quartier chinois, pour faire tout ce que tu souhaites. Un jour, je t'emmènerai en Chine, à Nankin, pour admirer les anciennes murailles et les rivières, puis nous ferons du vélo dans le Xinjiang, observant les étoiles. Ensuite, nous irons faire un road trip dans les vastes prairies de la Mongolie intérieure, allongés sur l'herbe à regarder les nuages, et nous irons à Pékin, visiter tous les endroits que tu désires.</p>
+            <p>Sabrina, je veux être le meilleur petit ami du monde. Peut-être que nous ne serons pas toujours en harmonie, peut-être qu'il y aura des disputes ou des moments de tristesse, mais crois-moi, je chercherai toujours une solution, et je serai toujours prêt à reconnaître mes erreurs et à les corriger. Mon amour pour toi n'est pas une impulsion passagère, mais une promesse gravée dans mon âme.</p>
+            <p>Notre histoire ne fait que commencer, et elle ne finira jamais.</p>
+            <p>Je t'aime de tout mon cœur,</p>
+            <p class="signature">Wu Wu.</p>
+        </div>
+        <button class="nav-button" onclick="showPhoto(0)">太美</button>
+    </div>
+
+    <!-- 照片展示 -->
+    <div class="photo-container" id="photo-container">
+        <img id="photo-display" src="photo1.jpg" alt="Moment précieux">
+        <button class="nav-button" id="prev-photo" onclick="prevPhoto()">返回</button>
+        <button class="nav-button" id="next-photo" onclick="nextPhoto()">太美</button>
+        <button class="nav-button hidden" id="restart" onclick="restart()">重温浪漫</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
